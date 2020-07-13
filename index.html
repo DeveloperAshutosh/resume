@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="js/script.js" defer> </script>   
     </head>
+<div class="mobile">
     <body>
         <div>
             <header class="navcontainer">
@@ -17,14 +18,14 @@
                     <h1>Ashutosh</h1>
 
                 </div>
-                <div class="togle"></div>
+                <input type="checkbox" id="togle">
                 <nav >
                     <div>
                         <ul class="headerul">
                             
                             <li><a href="#aboutmep">About Me</a> </li>
                             <li><a href="#skills">Skills</a> </li>
-                            <li><a href="#about">Education</a> </li>
+                            <li><a href="#education">Education</a> </li>
                             <li><a href="#about">Work</a> </li>
                             <li><a href="#about">Contact</a> </li>
                             
@@ -53,7 +54,8 @@
                 is reliable. 
                 </a>
             </P>
-            <ul id="skills" class="skills">
+            <h2 id="skills">Skills</h2>
+            <ul id="skillsul" class="skills">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -61,20 +63,31 @@
                 <li>Python</li>
                 <li>SQL</li>
             </ul>
-            <div>
-                <h2>Education</h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            
+           
+            <h2 class="education">Education</h2>
+            <div id="education" >
+                
+                    <p class="edmonton">
+                        •	Software development training 
+                         TECHCareers  University of Alberta , Edmonton <br>
+                        Lerned front end languages HTML , CSS , JavaScript
+                        and back end languages C# , PHP , SQL,
+                        I also learned React there wich is one 
+                        of the leading framework in the industry .
 
-           
-           
-            
+                    </p>
+                
+                <p>•	PG Diploma in business study 
+                    Halifax College, Halifax college, Feltham ,  UK 
+                </p>
+                <p>•	Bachelor in Computer Applications 
+                    MLU D.A.V College, Guru Nanak Dev University, India. 		
+                </p>
+                
+            </div>  
         </main>
         <footer>
-
         </footer>
     </body>
+</div>
 </html>

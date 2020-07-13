@@ -1,13 +1,104 @@
 body{
-    padding: 0;
-    margin: 0;
+  
     background-color: #383630;
+   
 
 }
-@media(max-width:480px){
-body{
-    background-color: blue;
+@media  (max-device-width : 480px){
+.mobile{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+   
+    
 }
+
+.navcontainer{
+    height: 75px;
+    color: #b5ad96;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    font-size: 20px;
+
+    
+}
+.headerul{
+    display: flex;
+    list-style: none;  
+    flex-direction: column; 
+    margin-top: 20px;
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color:#b5ad96 ;
+    text-decoration: none;
+    margin: 5px;
+    
+}
+.logo{
+    
+    display: none;
+    
+}
+.headerp{
+    font-size: 30px;
+    color:#b5ad96 ;
+    margin: 5px;
+}
+.cover{
+    width: 100px;
+    margin: 5px;
+   
+    
+}
+.contactbut{
+    margin: 5px;
+    background-color:#241d1b ;
+    color:#b5ad96 ;
+    transition:  .5s;  
+}
+.contactbut:hover{
+    background-color:#bd532a ;
+    transition:all .5s;
+    transform: scale(1.06);
+}
+.headerp:hover{
+    color:#bd532a ;
+    transition:  .5s;
+    transform: scale(1.06);
+}
+.skills>li{
+    display: flex;
+    margin: 10px;
+    margin-left: 2px;
+    
+    
+    font-size: 20px;
+    color:#b5ad96 ;
+    flex-direction: column;
+    padding: 5px;  
+    background-color:#241d1b;
+    border-radius: 5px;
+}
+.skills>li:hover{
+    background-color:#15755d ;
+    transform: scale(1.10);
+
+}
+
+#skills{
+    font-size: 30px;
+    color:#b5ad96;
+}
+
+
+
 }
 @media(min-width:1260px)
 {
@@ -20,6 +111,10 @@ body{
     align-items: center;
     font-size: 20px;
     
+    
+}
+#togle{
+    display: none;
 }
 .headerul{
     display: flex;
@@ -67,7 +162,7 @@ a{
 }
 .contactbut:hover{
 background-color:#bd532a ;
-transition:all .5s;
+transition: .5s;
 transform: scale(1.06);
 
 }
@@ -99,9 +194,16 @@ transform: scale(1.06);
     transform: scale(1.10);
 
 }
+#skills{
+    font-size: 50px;
+    color:#b5ad96  ;
+    text-align: left;
+    margin: 100px;
+}
 .skills{
     padding: 20px;
-    margin: 300px 140px;
+    margin: 50px 140px;
+    
     
 }
 
@@ -110,7 +212,26 @@ transform: scale(1.06);
     
 }
 .cover:hover{
-    transform: scale(2.06);
+    transform: scale(1.30);
+}
+#education{
+    font-size: 30px;
+    color:#b5ad96 ;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.edmonton{
+    background-image: url(img/edmonton.jpg);
+    
+    background-position: center;
+}
+.education{
+    font-size: 50px;
+    color:#b5ad96 ;
+    text-align: center;
+    margin: 30px;
+    
 }
 }
 
