@@ -1,0 +1,116 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #383630;
+
+}
+@media(max-width:480px){
+body{
+    background-color: blue;
+}
+}
+@media(min-width:1260px)
+{
+.navcontainer{
+    height: 75px;
+    color: #b5ad96;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.headerul{
+    display: flex;
+    list-style: none;   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color:#b5ad96 ;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+.logo{
+    margin-left: 80px;
+    font-size:30px ;
+    
+}
+.headerp{
+    font-size: 40px;
+    color:#b5ad96 ;
+    
+}
+.mainp{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+    margin-top: 200px;
+    transition:  .10s;
+  
+}
+.headerp:hover{
+    color:#bd532a ;
+    transition:  .5s;
+    transform: scale(1.06);
+}
+.contactbut{
+    padding: 8px 24px;
+    margin:  0 60px;
+    background-color:#241d1b ;
+    color:#b5ad96 ;
+    transition: all .5s;  
+}
+.contactbut:hover{
+background-color:#bd532a ;
+transition:all .5s;
+transform: scale(1.06);
+
+}
+.aboutmep{
+    color:#b5ad96 ;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    background-color:#241d1b ;
+    margin: 200px 150px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.skills>li{
+    display: flex;
+    
+    
+    margin: 10px;
+    width: 400px;
+    font-size: 30px;
+    color:#b5ad96 ;
+    flex-direction: column;
+    padding: 8px;  
+    background-color:#241d1b;
+    border-radius: 10px;
+}
+.skills>li:hover{
+    background-color:#15755d ;
+    transform: scale(1.10);
+
+}
+.skills{
+    padding: 20px;
+    margin: 300px 140px;
+    
+}
+
+.cover{
+    width: 200px;
+    
+}
+.cover:hover{
+    transform: scale(2.06);
+}
+}
+
