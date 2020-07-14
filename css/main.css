@@ -224,5 +224,48 @@ h2{
     margin-left: 150px;
       
 }
+#education>p{
+    padding: 10px;
+
 }
+
+.p,section{
+    font-size: 22px;
+    color:#b5ad96 ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin:  20px;
+    background-color:#241d1b ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.workdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.workdiv>p{
+    padding: 10px;
+    
+
+}
+.workdiv>section>p:hover{
+    padding: 10px;
+    color: #15755d;
+    
+    
+
+}
+#work{
+    text-align: center;
+    margin-top: 70px;
+}
+h3{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+}
+
 
