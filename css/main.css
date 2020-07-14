@@ -4,7 +4,7 @@ body{
    
 
 }
-@media  (max-device-width : 480px){
+@media only screen and (max-width: 480px){
 .mobile{
     display: flex;
     flex-direction: column;
@@ -91,12 +91,18 @@ a{
     transform: scale(1.10);
 
 }
-
-#skills{
-    font-size: 30px;
-    color:#b5ad96;
+#education{
+    font-size: 16px;
+    color:#b5ad96 ;
+    
+   
 }
-
+h2{
+    font-size: 30px;
+    color:#b5ad96  ;
+    text-align: left;
+  
+}
 
 
 }
@@ -178,8 +184,6 @@ transform: scale(1.06);
 }
 .skills>li{
     display: flex;
-    
-    
     margin: 10px;
     width: 400px;
     font-size: 30px;
@@ -194,17 +198,16 @@ transform: scale(1.06);
     transform: scale(1.10);
 
 }
-#skills{
+h2{
     font-size: 50px;
     color:#b5ad96  ;
     text-align: left;
-    margin: 100px;
+    margin: 20px 165px;
 }
 .skills{
     padding: 20px;
-    margin: 50px 140px;
-    
-    
+    margin: 20px 140px;
+       
 }
 
 .cover{
@@ -217,21 +220,9 @@ transform: scale(1.06);
 #education{
     font-size: 30px;
     color:#b5ad96 ;
-    display: flex;
-    justify-content: space-between;
-   
-}
-.edmonton{
-    background-image: url(img/edmonton.jpg);
-    
-    background-position: center;
-}
-.education{
-    font-size: 50px;
-    color:#b5ad96 ;
-    text-align: center;
-    margin: 30px;
-    
+    padding: 10px;
+    margin-left: 150px;
+      
 }
 }
 
