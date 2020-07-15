@@ -50,6 +50,7 @@ a{
     font-size: 30px;
     color:#b5ad96 ;
     margin: 5px;
+    background-color:#241d1b ;
 }
 .cover{
     width: 100px;
@@ -57,13 +58,13 @@ a{
    
     
 }
-.contactbut{
+button{
     margin: 5px;
     background-color:#241d1b ;
     color:#b5ad96 ;
     transition:  .5s;  
 }
-.contactbut:hover{
+button:hover{
     background-color:#bd532a ;
     transition:all .5s;
     transform: scale(1.06);
@@ -102,6 +103,22 @@ h2{
     color:#b5ad96  ;
     text-align: left;
   
+}
+.p,section{
+    font-size: 22px;
+    color:#b5ad96 ;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin:  20px;
+    background-color:#241d1b ;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+#work{
+    text-align: center;
+    margin-top: 70px;
 }
 
 
@@ -159,17 +176,19 @@ a{
     transition:  .5s;
     transform: scale(1.06);
 }
-.contactbut{
-    padding: 8px 24px;
+button{
+    padding: 10px;
     margin:  0 60px;
     background-color:#241d1b ;
     color:#b5ad96 ;
-    transition: all .5s;  
+    transition: all .5s; 
+    height: 40px; 
 }
-.contactbut:hover{
+button:hover {
 background-color:#bd532a ;
 transition: .5s;
 transform: scale(1.06);
+
 
 }
 .aboutmep{
@@ -233,12 +252,16 @@ h2{
     font-size: 22px;
     color:#b5ad96 ;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     margin:  20px;
     background-color:#241d1b ;
     padding: 10px;
     border-radius: 10px;
+
+}
+p{
+    letter-spacing: 2px;
 }
 .workdiv{
     display: flex;
@@ -263,6 +286,32 @@ h2{
 h3{
     font-size: 30px;
     font-weight: bolder;
+}
+footer{
+    font-size: 24px;
+    color:#b5ad96 ;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color:#241d1b ;
+    margin:0 20px ;
+    padding: 20px;
+    border-radius: 10px;
+}
+footer>button{
+    padding:0 10px;
+    margin: 0;
+    height: 30px;
+}
+footer>p{
+    margin-top: 5px;
+    
+}
+.input,textarea{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px;
 }
 
 
