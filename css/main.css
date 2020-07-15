@@ -50,7 +50,7 @@ a{
     font-size: 30px;
     color:#b5ad96 ;
     margin: 5px;
-    background-color:#241d1b ;
+    
 }
 .cover{
     width: 100px;
@@ -74,6 +74,15 @@ button:hover{
     transition:  .5s;
     transform: scale(1.06);
 }
+.aboutmep{
+    background-color: #241d1b;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+#skillsul{
+    margin-top: 50px;
+}
 .skills>li{
     display: flex;
     margin: 10px;
@@ -93,8 +102,12 @@ button:hover{
 
 }
 #education{
+    
     font-size: 16px;
     color:#b5ad96 ;
+    background-color:#241d1b ;
+    padding: 7px;
+    border-radius: 5px;
     
    
 }
@@ -105,25 +118,43 @@ h2{
   
 }
 .p,section{
-    font-size: 22px;
+    font-size: 16px;
     color:#b5ad96 ;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin:  20px;
+    margin-top: 10px;
     background-color:#241d1b ;
     padding: 10px;
     border-radius: 10px;
+    letter-spacing: 1px;
 
+}
+section>h3{
+    font-size: 22px;
+    font-weight: bolder;
 }
 #work{
-    text-align: center;
+    
     margin-top: 70px;
 }
+footer{
+    font-size: 13px;
+    color:#b5ad96 ;
+    display: flex;
+    height: 50px;
+    background-color:#241d1b ;
+    padding: 10px;
+   justify-content: space-between;
+}
+footer>p{
+    margin-top: 5px;
+}
+
 
 
 }
-@media(min-width:1260px)
+@media(min-width:1200px)
 {
 .navcontainer{
     height: 75px;
@@ -183,6 +214,8 @@ button{
     color:#b5ad96 ;
     transition: all .5s; 
     height: 40px; 
+    border: 2px solid #fff;
+    width: 200px;
 }
 button:hover {
 background-color:#bd532a ;
@@ -288,33 +321,91 @@ h3{
     font-weight: bolder;
 }
 footer{
-    font-size: 24px;
+    font-size: 20px;
     color:#b5ad96 ;
     display: flex;
     justify-content: space-evenly;
     height: 50px;
     background-color:#241d1b ;
-    margin:0 20px ;
-    padding: 20px;
+  
     border-radius: 10px;
 }
-footer>button{
-    padding:0 10px;
-    margin: 0;
-    height: 30px;
-}
+
 footer>p{
-    margin-top: 5px;
+    margin-top: 10px;
     
 }
-.input,textarea{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    margin: 20px;
+
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: right;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    
+     }
+  
+  
+  input{
+    padding: 10px;
+    margin:10px;
+    width: 80%;
+    background-color:#241d1b;
+    color: #b5ad96 ;
+    border: none;
+    outline:none;
+  }
+
+  input::placeholder{
+    color: #b5ad96 ;
+  }
+
+   textarea{
+  padding: 10px;
+  margin: 10px;     
+  width: 80%;
+  background-color:#241d1b;
+  color: #b5ad96 ;
+  border: none;
+  outline:none;
+ }
+ textarea::placeholder{
+   color: #b5ad96 ;
+ }
+ 
+  
+
+  .submit{
+  width: 40%;
+  background-color: #241d1b;
+  padding: 4px;
+  outline: none;
+   /* border: 1px solid #fff;
+  color: #fff; */
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  border:2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+ }
+
+ .submit:hover{
+       border: 1px solid #fff;
+  color:#b5ad96 ;
+  cursor: pointer;
+ }
+.contactheader{
+    font-size: 40px;
+    margin-top: 100px;
 }
-
-
+*{
+    border: 1px solid #fff;
+}
 }
 
 
