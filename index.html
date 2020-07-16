@@ -40,35 +40,36 @@
         <main>
             <div class="mainPara">
                 <p class="headerPara"> Hi,<br> I'm Ashutosh, <br> Junior Developer.</p>
-                <img class="cover" src="img/cover4.png" alt="Ashutosh's prifile picture ">
-                
+                <div class="gradient">
+                   <img class="cover" src="img/cover4.png" alt="Ashutosh's prifile picture ">
+                </div>
                
             </div>
-            <a href="#contact"><button  >Contact</button></a>
+             <button onclick="window.location.href='#contact'" > Contact </button>
            
-           
-            <P class="aboutMePara" ><a  id="aboutMePara">Hard-working individual with proficiency in HTML, JavaScript, and CSS, as well as ability to communicate effectively in a team setting, 
+            
+            <P id="aboutMePara" >  Hard-working individual with proficiency in HTML, JavaScript, and CSS, as well as ability to communicate effectively in a team setting, 
                 and possessing a strong willingness to learn about entrepreneurship and business seeks to apply  for the position of Intern Front End Developer at TECHCareers . 
                 I am a caring and thoughtful person who puts a lot of thought and action into the work that I do. I work to the best of my ability in
                  whatever I do and I am committed & conscientious. I follow rules easily and I respect authority. I do my best to help and 
-                  assist people as I am a hard worker. I also find it easy to communicate and socialise with different people from all ages, races and religions. My attendance and punctuality 
+                  assist people as I am a hard worker. I also find it easy to communicate and socialize with different people from all ages, races and religions. My attendance and punctuality 
                 is reliable. 
-                </a>
+                
             </P>
         
-            <h2 id="skillsUl" >Skills</h2>
+            <h2 id="skillsUl" >Skills.</h2>
             <ul  class="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>SQL</li>
+                <li>HTML.</li>
+                <li>CSS.</li>
+                <li>JavaScript.</li>
+                <li>C#.</li>
+                <li>Python.</li>
+                <li>SQL.</li>
             </ul>
            
             
             <div id="education" >
-                <h2 >Education</h2>
+                <h2 >Education:</h2>
                     <p>
                         •	Software development training 
                          TECHCareers , University of Alberta , Edmonton 
@@ -130,17 +131,23 @@
                    </p>
                 </section>
             </div>
-            <h2 id="contact" class="contactHeader" >Please Contact me via email.</h2>
+            <h2 id="contact"  class="contactHeader" >Please Contact.</h2>  
             <div class="contactForm">
+                
                 <form >
-                <label > Please enter first Name</label>
-                <input type="text" id="firstName" placeholder ="Please enter  first Name" required><br>
-                <label > Please enter first Name</label>
-                <input type="text" id="lastName" placeholder="Please enter your last Name " required><br>
-                <input type="email" id="email" placeholder="Please enter Yur Email Address" required><br>
-                <input type="text" id="subject" placeholder="subject" required><br>
-                <textarea name="Message" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
-                <button class="submit" id="submit">Send Message</button> 
+                   
+                   <label for="firstName">Please enter your First Name </label>
+                   <input type="text" id="firstName" placeholder ="Please enter  here" ><br>
+                   <label for="lastName">Please enter your Last Name </label>
+               
+                   <input type="text" id="lastName" placeholder="Please enter here " ><br>
+                   <label for="email">Please enter your Email </label>
+                   <input type="text" id="email" placeholder="Please enter here" ><br>
+                   <label for="subject">Please enter the subject </label><br>
+                   <input type="text" id="subject" placeholder="subject" ><br>
+                   <label for="subject">Please type your message here </label>
+                   <textarea name="Message" id="message" placeholder="Message" cols="30" rows="10" ></textarea>
+                   <button class="submit" id="submit">Send Message</button> 
                 </form>
             </div>
     
