@@ -1,19 +1,17 @@
 body{
   
     background-color: #383630;
-   
 
 }
-@media only screen and (max-width: 480px){
+
 .mobile{
     display: flex;
     flex-direction: column;
     margin: 10px;
-   
     
 }
 
-.navcontainer{
+.navContainer{
     height: 75px;
     color: #b5ad96;
     display: flex;
@@ -24,17 +22,14 @@ body{
 
     
 }
-.headerul{
+.headerUl{
     display: flex;
     list-style: none;  
     flex-direction: column; 
     margin-top: 20px;
     display: none;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-}
+
 a{
     color:#b5ad96 ;
     text-decoration: none;
@@ -46,7 +41,7 @@ a{
     display: none;
     
 }
-.headerp{
+.headerPara{
     font-size: 30px;
     color:#b5ad96 ;
     margin: 5px;
@@ -55,8 +50,7 @@ a{
 .cover{
     width: 100px;
     margin: 5px;
-   
-    
+       
 }
 button{
     margin: 5px;
@@ -69,25 +63,27 @@ button:hover{
     transition:all .5s;
     transform: scale(1.06);
 }
-.headerp:hover{
+.headerPara:hover{
     color:#bd532a ;
     transition:  .5s;
     transform: scale(1.06);
 }
-.aboutmep{
+.aboutMePara{
     background-color: #241d1b;
     padding: 7px;
     border-radius: 5px;
     margin-top: 40px;
 }
-#skillsul{
+#skillsUl{
     margin-top: 50px;
+
 }
+
 .skills>li{
     display: flex;
     margin: 10px;
     margin-left: 2px;
-    
+    width: 40%;
     
     font-size: 20px;
     color:#b5ad96 ;
@@ -105,7 +101,7 @@ button:hover{
     
     font-size: 16px;
     color:#b5ad96 ;
-    background-color:#241d1b ;
+    
     padding: 7px;
     border-radius: 5px;
     
@@ -150,35 +146,96 @@ footer{
 footer>p{
     margin-top: 5px;
 }
+.contactForm{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+    margin-bottom: 100px;
+  
+    
+     }
+  
+  
+  input{
+    padding: 10px;
+    margin:10px;
+    width: 80%;
+    background-color:#241d1b;
+    color: #b5ad96 ;
+    border: none;
+    outline:none;
+  }
 
+  input::placeholder{
+    color: #b5ad96 ;
+  }
 
+   textarea{
+  padding: 10px;
+  margin: 10px;     
+  width: 80%;
+  background-color:#241d1b;
+  color: #b5ad96 ;
+  border: none;
+  outline:none;
+ }
+ textarea::placeholder{
+   color: #b5ad96 ;
+ }
+ 
+  
 
+  .submit{
+  width: 60%;
+  background-color: #241d1b;
+  padding: 4px;
+  outline: none;
+   /* border: 1px solid #fff;
+  color: #fff; */
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  
+  
+ }
+
+ .submit:hover{
+       border: 1px solid #fff;
+  color:#b5ad96 ;
+  cursor: pointer;
+ }
+.contactHeader{
+    font-size: 24px;
+    margin-top: 100px;
 }
+
+
+
 @media(min-width:1200px)
 {
-.navcontainer{
+.navContainer{
     height: 75px;
     color: #b5ad96;
-    display: flex;
     justify-content: space-between;
     background-color: black;
-    align-items: center;
-    font-size: 20px;
-    
-    
+    font-size: 20px; 
 }
 #togle{
     display: none;
 }
-.headerul{
+.headerUl{
     display: flex;
-    list-style: none;   
+    list-style: none;
+    flex-direction: row;   
 }
-header{
-    display: flex;
-    justify-content: space-between;
-}
+
 a{
+    display: flex;
     color:#b5ad96 ;
     text-decoration: none;
     margin: 10px;
@@ -187,14 +244,14 @@ a{
 .logo{
     margin-left: 80px;
     font-size:30px ;
-    
+    display: flex;
 }
-.headerp{
+.headerPara{
     font-size: 40px;
     color:#b5ad96 ;
     
 }
-.mainp{
+.mainPara{
     display: flex;
     justify-content: space-between;
     margin: 60px;
@@ -202,7 +259,7 @@ a{
     transition:  .10s;
   
 }
-.headerp:hover{
+.headerPara:hover{
     color:#bd532a ;
     transition:  .5s;
     transform: scale(1.06);
@@ -221,29 +278,26 @@ button:hover {
 background-color:#bd532a ;
 transition: .5s;
 transform: scale(1.06);
-
-
 }
-.aboutmep{
+.aboutMePara{
     color:#b5ad96 ;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+    font-size: 25px;
     background-color:#241d1b ;
     margin: 200px 150px;
     padding: 20px;
     border-radius: 10px;
 }
+
 .skills>li{
-    display: flex;
+   
     margin: 10px;
     width: 400px;
-    font-size: 30px;
+    font-size: 24px;
     color:#b5ad96 ;
-    flex-direction: column;
     padding: 8px;  
     background-color:#241d1b;
     border-radius: 10px;
+    
 }
 .skills>li:hover{
     background-color:#15755d ;
@@ -251,7 +305,7 @@ transform: scale(1.06);
 
 }
 h2{
-    font-size: 50px;
+    font-size: 40px;
     color:#b5ad96  ;
     text-align: left;
     margin: 20px 165px;
@@ -267,13 +321,14 @@ h2{
     
 }
 .cover:hover{
-    transform: scale(1.30);
+    transform: scale(1.10);
 }
 #education{
-    font-size: 30px;
+    font-size: 24px;
     color:#b5ad96 ;
     padding: 10px;
     margin-left: 150px;
+    background: none;
       
 }
 #education>p{
@@ -282,11 +337,8 @@ h2{
 }
 
 .p,section{
-    font-size: 22px;
+    font-size: 20px;
     color:#b5ad96 ;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     margin:  20px;
     background-color:#241d1b ;
     padding: 10px;
@@ -296,16 +348,16 @@ h2{
 p{
     letter-spacing: 2px;
 }
-.workdiv{
+.workDiv{
     display: flex;
     justify-content: space-between;
 }
-.workdiv>p{
+.workDiv>p{
     padding: 10px;
     
 
 }
-.workdiv>section>p:hover{
+.workDiv>section>p:hover{
     padding: 10px;
     color: #15755d;
     
@@ -317,7 +369,7 @@ p{
     margin-top: 70px;
 }
 h3{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bolder;
 }
 footer{
@@ -336,12 +388,12 @@ footer>p{
     
 }
 
-.contact-form{
+.contactForm{
     display: grid;
     grid-template-columns: auto auto;
-    justify-items: right;
+    margin: 20px;
     margin-bottom: 100px;
-    margin-right: 100px;
+  
     
      }
   
@@ -390,8 +442,8 @@ footer>p{
   cursor: pointer;
   letter-spacing: 2px;
   margin-left: 3%;
-  border:2px solid rgb(190, 190, 190);
-  color: rgb(190, 190, 190);
+  
+  
  }
 
  .submit:hover{
@@ -399,13 +451,11 @@ footer>p{
   color:#b5ad96 ;
   cursor: pointer;
  }
-.contactheader{
+.contactHeader{
     font-size: 40px;
     margin-top: 100px;
 }
-*{
-    border: 1px solid #fff;
-}
+
 }
 
 
