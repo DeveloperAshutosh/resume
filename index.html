@@ -40,9 +40,9 @@
         <main>
             <div class="mainPara">
                 <p class="headerPara"> Hi,<br> I'm Ashutosh, <br> Junior Developer.</p>
-                <div class="gradient">
+              
                    <img class="cover" src="img/cover4.png" alt="Ashutosh's prifile picture ">
-                </div>
+                
                
             </div>
              <button onclick="window.location.href='#contact'" > Contact </button>
@@ -137,15 +137,20 @@
                 <form >
                    
                    <label for="firstName">Please enter your First Name </label>
+                   <div class="firstNameWarning"></div>
                    <input type="text" id="firstName" placeholder ="Please enter  here" ><br>
                    <label for="lastName">Please enter your Last Name </label>
+                   <div class="lastNameWarning"></div>
                
                    <input type="text" id="lastName" placeholder="Please enter here " ><br>
                    <label for="email">Please enter your Email </label>
+                   <div class="emailWarning"></div>
                    <input type="text" id="email" placeholder="Please enter here" ><br>
                    <label for="subject">Please enter the subject </label><br>
+                   <div class="subjectWarning"></div>
                    <input type="text" id="subject" placeholder="subject" ><br>
                    <label for="subject">Please type your message here </label>
+                   <div class="messageWarning"></div>
                    <textarea name="Message" id="message" placeholder="Message" cols="30" rows="10" ></textarea>
                    <button class="submit" id="submit">Send Message</button> 
                 </form>
