@@ -13,6 +13,7 @@ body{
     
 }
 
+
 header{
     height: 75px;
     
@@ -83,6 +84,7 @@ button:hover{
 
 }
 
+
 .skills>li{
     display: flex;
     margin: 10px;
@@ -138,18 +140,7 @@ section>h3{
     border-bottom: 2px solid#b5ad96;
     
 }
-footer{
-    font-size: 13px;
-    
-    display: flex;
-    height: 50px;
-    background-color:#241d1b ;
-    padding: 10px;
-   justify-content: space-between;
-}
-footer>p{
-    margin-top: 5px;
-}
+
 .contactForm{
     display: grid;
     grid-template-columns: auto auto;
@@ -252,7 +243,18 @@ label{
     color:#b5ad96  ;
     margin-left: 10px;
 }
-
+footer{
+    font-size: 13px;
+    
+    display: flex;
+    height: 50px;
+    background-color:#241d1b ;
+    padding: 10px;
+   justify-content: space-between;
+}
+footer>p{
+    margin-top: 5px;
+}
 
 @media(min-width:1000px)
 {
@@ -396,6 +398,7 @@ footer{
     height: 50px;
     border-radius: 10px;
 }
+
 
 footer>p{
     margin-top: 10px;

@@ -2,24 +2,27 @@
 
 
 
-document.querySelector("#submit").addEventListener("click",()=>{
+document.querySelector("#submit").addEventListener("click",(e)=>{
     let sWord = ["feldercarb", "frack", "skinjob", "vulgacarb"];
-    const message  = document.querySelector("#message").value;
+    const message  = document.querySelector("#message");
     const label  = document.querySelector("#messageaWarning");
-    
-    for( let i  ; i <= sWord.length; i++ ){
+        let i;
+    for(  i = 0  ; i <= sWord.length; i++ ){
+       let errors = false;
         
-        if(sWord[i] === message){
-            label.innerHTML = "dont talk shit mate";
-            return false;
-
-
+        if( sWord.includes(message)){
+            label.innerHTML = "Please be professional";
+            
+           
+           errors = true;
+            
         }
         
         else{
             mailTo();
-            return true;
+            
         }
+        
 
     }
     
