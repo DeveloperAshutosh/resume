@@ -1,31 +1,34 @@
 
-const namev = document.querySelector("#firstName");
-const email = document.querySelector("#email");
-const subject = document.querySelector("#subject");
-const message = document.querySelector("#message");
-const submit = document.querySelector("#submit");
-const nameWarning = document.querySelector(".firstNameWarning");
-const emailWarning = document.querySelector(".emailWarning");
-const subjectWarning = document.querySelector(".subjectWarning");
-const messageWarning = document.querySelector(".messageWarning");
-let sWords = [];
-
-submit.addEventListener("click",()=>{
 
 
 
-mailTo();
+document.querySelector("#submit").addEventListener("click",()=>{
+    let sWord = ["feldercarb", "frack", "skinjob", "vulgacarb"];
+    const message  = document.querySelector("#message").value;
+    const label  = document.querySelector("#messageaWarning");
+    
+    for( let i  ; i <= sWord.length; i++ ){
+        
+        if(sWord[i] === message){
+            label.innerHTML = "dont talk shit mate";
+            return false;
 
+
+        }
+        
+        else{
+            mailTo();
+            return true;
+        }
+
+    }
+    
 });
 function mailTo(){
-    window.location.href = "mailto:akausha1@ualberta.ca   "  + "?subject=" + subject.value + "&body=" +message.innerHTML;
+    const subject = document.querySelector("#subject").value.trim();
+    const message = document.querySelector("#message").value.trim();
+    window.location.href = "mailto:akausha1@ualberta.ca?subject=" + subject + "&body=" + message ;
 }
-
-
-
-
-
-
 
 
 
