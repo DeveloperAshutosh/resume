@@ -1,7 +1,7 @@
 
 body{
   border: 2px solid #fff;;
-  
+  color:#b5ad96 ;
     background-color: #383630;
 
 }
@@ -13,9 +13,9 @@ body{
     
 }
 
-.navContainer{
+header{
     height: 75px;
-    color: #b5ad96;
+    
     display: flex;
     justify-content: space-between;
     background-color: black;
@@ -29,7 +29,7 @@ body{
     list-style: none;  
     flex-direction: column; 
     margin-top: 20px;
-    display: none;
+    display:none ;
 }
 
 a{
@@ -39,13 +39,13 @@ a{
     
 }
 .logo{
-    
-    display: none;
+    font-size: xx-large;
+    display: flex ;
     
 }
 .headerPara{
     font-size: 30px;
-    color:#b5ad96 ;
+    
     margin: 5px;
     
     
@@ -59,16 +59,16 @@ button{
     margin: 5px;
     background-color:#241d1b ;
     color:#b5ad96 ;
-    transition:  .5s;  
+    transition:  .50s;  
 }
 button:hover{
     background-color:#bd532a ;
-    transition:all .5s;
+    transition:all .50s;
     transform: scale(1.06);
 }
 .headerPara:hover{
     color:#bd532a ;
-    transition:  .5s;
+    transition:  .50s;
     transform: scale(1.06);
 }
 #aboutMePara{
@@ -76,7 +76,7 @@ button:hover{
     padding: 7px;
     border-radius: 5px;
     margin-top: 40px;
-    color:#b5ad96 ;
+    
 }
 #skillsUl{
     margin-top: 50px;
@@ -90,7 +90,7 @@ button:hover{
     width: 40%;
     
     font-size: 20px;
-    color:#b5ad96 ;
+   
     flex-direction: column;
     padding: 5px;  
     background-color:#241d1b;
@@ -104,8 +104,6 @@ button:hover{
 #education{
     
     font-size: 16px;
-    color:#b5ad96 ;
-    
     padding: 7px;
     border-radius: 5px;
     
@@ -113,13 +111,12 @@ button:hover{
 }
 h2{
     font-size: 30px;
-    color:#b5ad96  ;
     text-align: left;
   
 }
 .p,section{
     font-size: 16px;
-    color:#b5ad96 ;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -128,6 +125,7 @@ h2{
     padding: 10px;
     border-radius: 10px;
     letter-spacing: 1px;
+    border: 1px solid #b5ad96;
 
 }
 section>h3{
@@ -137,12 +135,12 @@ section>h3{
 #work{
     font-size: 60px;
     margin-top: 70px;
-    border-bottom: 3px solid#b5ad96;
+    border-bottom: 2px solid#b5ad96;
     
 }
 footer{
     font-size: 13px;
-    color:#b5ad96 ;
+    
     display: flex;
     height: 50px;
     background-color:#241d1b ;
@@ -197,9 +195,8 @@ footer>p{
   background-color: #241d1b;
   padding: 4px;
   outline: none;
-   /* border: 1px solid #fff;
-  color: #fff; */
-  font-size: 13px;
+  border: 2px solid #fff ;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   height: 33px;
@@ -207,14 +204,18 @@ footer>p{
   cursor: pointer;
   letter-spacing: 2px;
   margin-left: 3%;
+  margin-left: 12px;
   
   
  }
 
  .submit:hover{
+     background-color: #bd532a;
        border: 1px solid #fff;
-  color:#b5ad96 ;
-  cursor: pointer;
+    
+     cursor: pointer;
+     
+  
  }
 .contactHeader{
     font-size: 24px;
@@ -255,29 +256,17 @@ label{
 
 @media(min-width:1000px)
 {
-.navContainer{
-    height: 75px;
-    color: #b5ad96;
-    justify-content: space-between;
-    background-color: black;
-    font-size: 20px; 
-}
-#togle{
-    display: none;
-}
+
+
 .headerUl{
     display: flex;
     list-style: none;
     flex-direction: row;   
 }
-
-a{
-    display: flex;
-    color:#b5ad96 ;
-    text-decoration: none;
-    margin: 10px;
-    
+li>a{
+    margin-right: 20px;
 }
+
 .logo{
     margin-left: 80px;
     font-size:30px ;
@@ -285,7 +274,7 @@ a{
 }
 .headerPara{
     font-size: 40px;
-    color:#b5ad96 ;
+    
     
 }
 .mainPara{
@@ -298,15 +287,13 @@ a{
   
 }
 .headerPara:hover{
-    color:#bd532a ;
+    
     transition:  .5s;
     transform: scale(1.06);
 }
 button{
     padding: 10px;
     margin:  0 60px;
-    background-color:#241d1b ;
-    color:#b5ad96 ;
     transition: all .5s; 
     height: 40px; 
     border: 2px solid #fff;
@@ -317,45 +304,6 @@ background-color:#bd532a ;
 transition: .5s;
 transform: scale(1.06);
 }
-#aboutMePara{
-    color:#b5ad96 ;
-    font-size: 25px;
-    background-color:#241d1b ;
-    margin: 200px 150px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #b5ad96;
-    
-}
-
-.skills>li{
-   
-    margin: 10px;
-    width: 400px;
-    font-size: 24px;
-    color:#b5ad96 ;
-    padding: 8px;  
-    background-color:#241d1b;
-    border-radius: 10px;
-    
-}
-.skills>li:hover{
-    background-color:#15755d ;
-    transform: scale(1.10);
-
-}
-h2{
-    font-size: 40px;
-    color:#b5ad96  ;
-    text-align: left;
-    margin: 20px 165px;
-}
-.skills{
-    padding: 20px;
-    margin: 20px 140px;
-       
-}
-
 .cover{
     width: 200px;
     
@@ -364,52 +312,75 @@ h2{
 .cover:hover{
     transform: scale(1.10);
 }
-#education{
-    font-size: 24px;
-    color:#b5ad96 ;
-    padding: 10px;
-    margin-left: 150px;
-    background: none;
+#aboutMePara{
+   
+    font-size: 25px;
+    display: flex;
+    width: 60%;
+    margin: 200px 250px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #b5ad96;
+    flex-direction: column;
+    align-items: center;
     
-      
 }
-#education>h2{
-    margin-left: 10px;
+
+.skills>li{
+    margin: 10px;
+    width: 400px;
+    font-size: 24px;
+    padding: 8px;  
+    border-radius: 10px;
+  
 }
-#education>p{
-    padding: 10px;
+.skills>li:hover{
+    background-color:#15755d ;
+    transform: scale(1.10);
 
 }
+
+.skillsEducation{
+    padding: 20px;      
+}
+#skillsUl{
+    margin-left: 20px;
+    font-size: 60px;
+}
+
+
+#education{
+    font-size: 24px;
+    line-height: 40px;
+    
+}
+
 
 .p,section{
     font-size: 20px;
-    color:#b5ad96 ;
     margin:  20px;
-    background-color:#241d1b ;
     padding: 10px;
     border: 2px solid #b5ad96 ;
     border-radius: 10px;
-
-
+    
 }
 p{
     letter-spacing: 2px;
+
+}
+section>p{
+    line-height: 1.5rem;
 }
 .workDiv{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .workDiv>p{
     padding: 10px;
-    
-
 }
 .workDiv>section>p:hover{
     padding: 10px;
     color: #15755d;
-    
-    
-
 }
 #work{
     text-align: center;
@@ -417,16 +388,12 @@ p{
 }
 h3{
     font-size: 24px;
-    font-weight: bolder;
+    padding: 20px;
 }
 footer{
     font-size: 20px;
-    color:#b5ad96 ;
-    display: flex;
     justify-content: space-evenly;
     height: 50px;
-    background-color:#241d1b ;
-  
     border-radius: 10px;
 }
 
@@ -435,70 +402,6 @@ footer>p{
     
 }
 
-.contactForm{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 20px;
-    margin-bottom: 100px;
-  
-    
-     }
-  
-  
-  input{
-    padding: 10px;
-    margin:10px;
-    width: 80%;
-    background-color:#241d1b;
-    color: #b5ad96 ;
-    border: none;
-    outline:none;
-  }
-
-  input::placeholder{
-    color: #b5ad96 ;
-    font-size: 12px;
-  }
-
-   textarea{
-  padding: 10px;
-  margin: 10px;     
-  width: 80%;
-  background-color:#241d1b;
-  color: #b5ad96 ;
-  border: none;
-  outline:none;
- }
- textarea::placeholder{
-   color: #b5ad96 ;
- }
- 
-  
-
-  .submit{
-  width: 40%;
-  background-color: #241d1b;
-  padding: 4px;
-  outline: none;
-   /* border: 1px solid #fff;
-  color: #fff; */
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  height: 33px;
-  text-align: center;
-  cursor: pointer;
-  letter-spacing: 2px;
-  margin-left: 3%;
-  
-  
- }
-
- .submit:hover{
-       border: 1px solid #fff;
-  color:#b5ad96 ;
-  cursor: pointer;
- }
 .contactHeader{
     font-size: 40px;
     margin-top: 100px;
@@ -508,6 +411,66 @@ footer>p{
 label{
     font-size: 20px;
     margin-left: 12px;
+}
+
+
+}
+@media (min-width:700px){
+    
+.headerUl{
+    display: flex;
+    list-style: none;
+    flex-direction: row;   
+}
+li>a{
+    margin-right: 20px;
+}
+
+.logo{
+    margin-left: 80px;
+    font-size:30px ;
+    display: flex;
+}
+.headerPara{
+    font-size: 40px;
+    
+    
+}
+.mainPara{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+    margin-top: 200px;
+    transition:  .10s;
+    transform: translateY(-50%);
+  
+}
+.headerPara:hover{
+    
+    transition:  .5s;
+    transform: scale(1.06);
+}
+button{
+    padding: 10px;
+    margin:  0 60px;
+    transition: all .5s; 
+    height: 40px; 
+    border: 2px solid #fff;
+    width: 200px;
+}
+button:hover {
+    background-color:#bd532a ;
+    transition: .5s;
+    transform: scale(1.06);
+    }
+    
+    .cover:hover{
+        transform: scale(1.10);
+    }
+#education{
+    font-size: 24px;
+    line-height: 30px;
+    
 }
 
 
