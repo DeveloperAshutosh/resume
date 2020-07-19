@@ -67,6 +67,7 @@ button:hover{
     transition:all .50s;
     transform: scale(1.06);
 }
+
 .headerPara:hover{
     color:#bd532a ;
     transition:  .50s;
@@ -77,7 +78,7 @@ button:hover{
     padding: 7px;
     border-radius: 5px;
     margin-top: 40px;
-    box-shadow:50px 50px 30px rgba(0, 0, 0, 3);
+    box-shadow:10px 10px 6px rgba(0, 0, 0, 3);
     
 }
 #skillsUl{
@@ -149,7 +150,7 @@ section>h3{
     grid-template-columns: auto auto;
     margin: 20px;
     margin-bottom: 100px;
-    box-shadow: 30px 30px 20px rgba(0, 0, 0, 3);
+    
     
      }
   
@@ -216,16 +217,12 @@ section>h3{
     margin-top: 100px;
     margin-left: 30px;
 }
-.firstNameWarning{
+.nameWarning{
     font-size: 15px;
     color:#d6210d ;
     margin-left: 20px;
 }
-.lastNameWarning{
-    font-size: 15px;
-    color:#d6210d ;
-    margin-left: 20px;
-}
+
 .emailWarning{
     font-size: 15px;
     color:#d6210d ;
@@ -258,7 +255,9 @@ footer{
 footer>p{
     margin-top: 5px;
 }
-
+em{
+   color:#598ee3 ;
+}
 @media(min-width:1000px)
 {
 
@@ -285,12 +284,13 @@ li>a{
 .mainPara{
     display: flex;
     justify-content: space-between;
-    margin: 60px;
+    
     margin-top: 200px;
     transition:  .10s;
     transform: translateY(-50%);
   
 }
+
 .headerPara:hover{
     
     transition:  .5s;
@@ -298,11 +298,11 @@ li>a{
 }
 button{
     padding: 10px;
-    margin:  0 60px;
     transition: all .5s; 
     height: 40px; 
     border: 2px solid #fff;
     width: 200px;
+    margin-top: 0;
 }
 button:hover {
 background-color:#bd532a ;
@@ -322,13 +322,11 @@ transform: scale(1.06);
     font-size: 25px;
     display: flex;
     width: 60%;
-    margin: 200px 250px;
+    margin: 100px 100px;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #b5ad96;
-    flex-direction: column;
-    align-items: center;
-    
+    margin-left: 250px;
 }
 
 .skills>li{
