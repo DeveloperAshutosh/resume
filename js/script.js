@@ -18,7 +18,8 @@ document.querySelector("#submit").addEventListener("click",(e)=>{
     
     SwearWordBlocker();//calling the swear word blocker method
     
-    
+    subject.value = "";
+    message.value = "";
     
  
 });
@@ -93,7 +94,12 @@ function SwearWordBlocker(){
     }
    
     else{
-      
+        name.value="";
+        email.value="";
+        nameWarning.innerHTML="";
+        subjectWarning.innerHTML="";
+        emailWarning.innerHTML="";
+        messageWarning.innerHTML="";
         MailTo();
     }
     
