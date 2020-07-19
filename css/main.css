@@ -284,12 +284,19 @@ li>a{
 .mainPara{
     display: flex;
     justify-content: space-between;
-    
+    flex-direction: column;
     margin-top: 200px;
     transition:  .10s;
     transform: translateY(-50%);
-  
+    align-self: flex-start;
+    
 }
+.conntainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 
 .headerPara:hover{
     
@@ -302,7 +309,7 @@ button{
     height: 40px; 
     border: 2px solid #fff;
     width: 200px;
-    margin-top: 0;
+    
 }
 button:hover {
 background-color:#bd532a ;

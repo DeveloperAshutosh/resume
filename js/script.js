@@ -1,3 +1,16 @@
+
+    const name = document.querySelector("#name");
+    const email = document.querySelector("#email");
+    const nameWarning = document.querySelector(".nameWarning");
+    const emailWarning = document.querySelector(".emailWarning");
+    const messageWarning  = document.querySelector(".messageWarning");
+    const message  = document.querySelector("#message");
+    const subjectWarning  = document.querySelector(".subjectWarning");
+    const clearInput  = document.getElementById("input");
+    const clearText  = document.getElementById("textarea");
+    
+
+
 //diricting to mail after clicking
 document.querySelector("#submit").addEventListener("click",(e)=>{
     e.preventDefault();
@@ -16,14 +29,6 @@ function MailTo(){
 //creating the function to filter the input from the user
 function SwearWordBlocker(){
     let swearWord = ["feldercarb", "frack", "skinjob", "vulgacarb"];//setting the bad words
-    
-    const name = document.querySelector("#name");
-    const email = document.querySelector("#email");
-    const nameWarning = document.querySelector(".nameWarning");
-    const emailWarning = document.querySelector(".emailWarning");
-    const messageWarning  = document.querySelector(".messageWarning");
-    const message  = document.querySelector("#message");
-    const subjectWarning  = document.querySelector(".subjectWarning");
     
         let i;
         let errors = false;
@@ -45,27 +50,33 @@ function SwearWordBlocker(){
         messageWarning.innerHTML = "*Please be professional this is not acceptable";
         
     }
-    //If name is not entered then display warning
-    else if(name.value.trim() === "" || email.value.trim() === "" || subject.value.trim() ==="" ){
+    //If name/email/subject/message is not entered then display warning
+    else if(name.value.trim() === "" || email.value.trim() === "" || subject.value.trim() ===""   ) {
+       
+        // If namel is missing then display the warning
+       
         if(name.value.trim() === ""){
-            nameWarning.innerHTML = "*name is missing";
+            nameWarning.innerHTML = "*Name can not be missing";
 
         }
          // If email is missing then display the warning
     
         if (email.value.trim() === ""){
-            emailWarning.innerHTML = "*email is missing";
+            emailWarning.innerHTML = "*Email can not be missing";
 
         }
+        // If subject is missing then display the warning
         if(subject.value.trim() === ""){
-            subjectWarning.innerHTML = "*subject is missing"
+            subjectWarning.innerHTML = "*Subject can not be missing";
+            
         }
-
+        
 
         
     }
    
     else{
+      
         MailTo();
     }
 
