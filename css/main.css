@@ -191,7 +191,7 @@ section>h3{
   padding: 4px;
   outline: none;
   border: 2px solid #fff ;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: bold;
   letter-spacing: 2px;
   height: 33px;
@@ -281,21 +281,7 @@ li>a{
     
     
 }
-.mainPara{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 200px;
-    transition:  .10s;
-    transform: translateY(-50%);
-    align-self: flex-start;
-    
-}
-.conntainer{
-    display: flex;
-    justify-content: space-between;
-    
-}
+
 
 
 .headerPara:hover{
@@ -319,6 +305,9 @@ transform: scale(1.06);
 .cover{
     width: 200px;
     
+   
+    margin-right: 70px;
+    object-fit: contain;
     
 }
 .cover:hover{
@@ -450,12 +439,19 @@ li>a{
 .mainPara{
     display: flex;
     justify-content: space-between;
-    margin: 60px;
-    margin-top: 200px;
+    
     transition:  .10s;
     transform: translateY(-50%);
   
 }
+.container{
+    margin: 0px;
+    margin-top: 200px;
+    
+    margin-left: 50px;
+}
+
+
 .headerPara:hover{
     
     transition:  .5s;

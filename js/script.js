@@ -6,16 +6,19 @@
     const messageWarning  = document.querySelector(".messageWarning");
     const message  = document.querySelector("#message");
     const subjectWarning  = document.querySelector(".subjectWarning");
-    const clearInput  = document.getElementById("input");
-    const clearText  = document.getElementById("textarea");
+   
+    
     
 
 
-//diricting to mail after clicking
+//directing to mail after clicking
 document.querySelector("#submit").addEventListener("click",(e)=>{
     e.preventDefault();
     
+    
     SwearWordBlocker();//calling the swear word blocker method
+    
+    
     
  
 });
@@ -59,15 +62,29 @@ function SwearWordBlocker(){
             nameWarning.innerHTML = "*Name can not be missing";
 
         }
+        else{
+            nameWarning.innerHTML = "";
+            
+        }
          // If email is missing then display the warning
     
         if (email.value.trim() === ""){
             emailWarning.innerHTML = "*Email can not be missing";
 
         }
+        else{
+            emailWarning.innerHTML = "";
+           
+        }
         // If subject is missing then display the warning
         if(subject.value.trim() === ""){
             subjectWarning.innerHTML = "*Subject can not be missing";
+            
+        }
+        else{
+            subjectWarning.innerHTML = "";
+            
+            
             
         }
         
@@ -79,8 +96,9 @@ function SwearWordBlocker(){
       
         MailTo();
     }
-
-      
+    
+    
+    
 }
 
 
