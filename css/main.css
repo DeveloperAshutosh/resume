@@ -2,8 +2,9 @@
 body{
   border: 2px solid #fff;;
   color:#b5ad96 ;
-    background-color: #383630 ;
-
+  background-color: #383630 ;
+  
+   
 }
 
 .mobile{
@@ -131,7 +132,7 @@ h2{
     letter-spacing: 1px;
     border: 1px solid #b5ad96 ;
     box-shadow: 30px 30px 20px rgba(0, 0, 0, 3);
-    
+    flex: 1;
 
 }
 section>h3{
@@ -369,6 +370,7 @@ p{
 }
 section>p{
     line-height: 1.5rem;
+    flex: 1;
 }
 .workDiv{
     display: flex;
@@ -376,6 +378,7 @@ section>p{
 }
 .workDiv>p{
     padding: 10px;
+    flex: 1;
 }
 .workDiv>section>p:hover{
     padding: 10px;

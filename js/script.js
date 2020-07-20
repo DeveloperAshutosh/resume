@@ -6,13 +6,13 @@
     const messageWarning  = document.querySelector(".messageWarning");
     const message  = document.querySelector("#message");
     const subjectWarning  = document.querySelector(".subjectWarning");
-   
+    const submit = document.querySelector("#submit")
     
     
 
 
 //directing to mail after clicking
-document.querySelector("#submit").addEventListener("click",(e)=>{
+    submit.addEventListener("click",(e)=>{
     e.preventDefault();
     
     
